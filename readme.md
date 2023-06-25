@@ -51,3 +51,37 @@ To run this project, execute:
 ```
 python app.py
 ```
+
+
+## API Endpoints
+
+1. Get news by category:
+
+**Body**
+
+```
+router: /api/news_gpt/headlines
+
+body: {
+    "category": "business"
+}
+```
+
+**Response**
+
+```
+[
+    {
+        "author": "Faye Prosser",
+        "description": "A recall has been issued for multiple frozen fruit products and fruit blends due to possible Listeria monocytogenes contamination. Multiple grocery stores nationwide are included in this recall (incl. NC).",
+        "url": "https://www.wral.com/story/frozen-fruit-recall-due-to-possible-listeria-contamination/20923691/"
+    },
+    {
+        "author": "Kristen Altus",
+        "description": "Debbie, Jennifer, Sheryl and Wendy Yuengling say the secret to their sixth-generation success at America's oldest brewery comes from their \"proud,\" patriotic family bond.",
+        "url": "https://www.foxbusiness.com/business-leaders/americas-oldest-brewery-reminds-beer-lovers-story-nobody-else"
+    },
+    ...
+]
+```
+
