@@ -1,0 +1,3 @@
+langchain_course/*
+.env
+__pycache__/
