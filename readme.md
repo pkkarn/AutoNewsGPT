@@ -44,6 +44,14 @@ Follow these steps to run this project on your local machine.
     pip install -r requirements.txt
     ```
 
+
+5. Add .env file at root level.
+
+```
+OPENAI_KEY="sk-xxx"
+NEWS_API="xxx" # Get API Key: https://newsapi.org/docs/client-libraries/python
+```
+
 ## Usage
 
 To run this project, execute:
