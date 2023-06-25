@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.register_blueprint(blue_print , url_prefix='/api')
 
 @app.route("/", methods=["GET"])
-def getNews():
+def homepage():
     return "It's a homepage"
 
 if __name__ == '__main__':

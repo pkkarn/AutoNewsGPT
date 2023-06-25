@@ -3,8 +3,9 @@ from third_parties import news
 
 blue_print = Blueprint('views', __name__)
 
-# businessentertainmentgeneralhealthsciencesportstechnology
-def handle_post():
+# Avaialble categories business entertainment general health science sports technology
+# Sort of a controller when it compared to node.js
+def post_news_gpt_headlines():
     data = request.get_json()
 
     if 'category' in data:
@@ -16,10 +17,9 @@ def handle_post():
         raise ValueError("Could not find category")
     
 
-
 @blue_print.route('/news_gpt/headlines', methods=['POST'])
 def news_gpt():
     try:
-        return handle_post()
+        return post_news_gpt_headlines()
     except Exception as e:
         return { "error": str(e) }, 400
