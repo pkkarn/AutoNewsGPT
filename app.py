@@ -1,6 +1,5 @@
 from flask import Flask, request
 from api.views import blue_print
-
 # Define Flask server
 
 app = Flask(__name__)
@@ -18,6 +17,8 @@ def homepage():
 - [ ] Host and Automate this.
 - [ ] Get Back and Refactor
 '''
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
